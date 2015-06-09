@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{scrreprt}
+\documentclass[11pt,DIV=15]{scrreprt}
 
 % Codierung
 \usepackage{selinput}
@@ -19,10 +19,8 @@
 \cohead*{}
 \rohead*{}
 \lofoot*{ITPMF}
-\cofoot*{}
+\cofoot*{\today} 
 \rofoot*{Seite \thepage \hspace{1pt} von \pageref{LastPage}}
-
-\usepackage{lipsum}
 
 % Bilder
 \usepackage{graphicx}
@@ -32,52 +30,9 @@
 \usepackage[hidelinks]{hyperref}
 
 \begin{document}
-\titlehead{Hochschule Luzern \\ 
-	Technik \& Architektur}
-\subject{Zusammenfassung}
-\title{IT-Projektmanagement \& Führung}
-\subtitle{}
-\author{Fabian Wüthrich \\ 
-	Simon Erni \\ 
-	Alex Suter}
-\date{\today}
 
-\maketitle
+\input{title}
 
-\tableofcontents
-
-\include{einfuehrung}
-
-\include{wahrnehmung-kommunikation}
-
-\include{praesentationstechnik}
-
-\include{moderation-informelle-fuehrung}
-
-\include{teamentwicklung}
-
-\include{selbstfuehrung}
-
-\include{project-setup-planning}
-
-\include{fallstudie-project-planning}
-
-\include{projektrisiken}
-
-\include{projekt-controlling}
-
-\include{organisatorische-projektfuehrung}
-
-\include{kommunikation-im-projekt}
-
-\include{nutzenanalyse-business-case}
-
-\include{change-mgmt-im-projekt}
-
-\include{strategische-it-fuehrung}
-
-\include{projekt-portfolio-management}
-
-\include{it-trends}
+\input{content}
 
 \end{document}
